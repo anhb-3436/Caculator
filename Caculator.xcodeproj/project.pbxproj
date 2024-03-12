@@ -99,12 +99,9 @@
 		ECFE96A42B9FF4F6009088C4 /* Caculator */ = {
 			isa = PBXGroup;
 			children = (
-				ECFE96A52B9FF4F6009088C4 /* AppDelegate.swift */,
-				ECFE96A72B9FF4F6009088C4 /* SceneDelegate.swift */,
-				ECFE96A92B9FF4F6009088C4 /* ViewController.swift */,
-				ECFE96AB2B9FF4F6009088C4 /* Main.storyboard */,
-				ECFE96AE2B9FF4F8009088C4 /* Assets.xcassets */,
-				ECFE96B02B9FF4F8009088C4 /* LaunchScreen.storyboard */,
+				ECFE96D72B9FF76C009088C4 /* Ultilities */,
+				ECFE96D62B9FF764009088C4 /* Scenes */,
+				ECFE96D52B9FF75E009088C4 /* App */,
 				ECFE96B32B9FF4F8009088C4 /* Info.plist */,
 			);
 			path = Caculator;
@@ -125,6 +122,33 @@
 				ECFE96C82B9FF4F8009088C4 /* CaculatorUITestsLaunchTests.swift */,
 			);
 			path = CaculatorUITests;
+			sourceTree = "<group>";
+		};
+		ECFE96D52B9FF75E009088C4 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				ECFE96A52B9FF4F6009088C4 /* AppDelegate.swift */,
+				ECFE96A72B9FF4F6009088C4 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		ECFE96D62B9FF764009088C4 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				ECFE96A92B9FF4F6009088C4 /* ViewController.swift */,
+				ECFE96AB2B9FF4F6009088C4 /* Main.storyboard */,
+				ECFE96B02B9FF4F8009088C4 /* LaunchScreen.storyboard */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		ECFE96D72B9FF76C009088C4 /* Ultilities */ = {
+			isa = PBXGroup;
+			children = (
+				ECFE96AE2B9FF4F8009088C4 /* Assets.xcassets */,
+			);
+			path = Ultilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
