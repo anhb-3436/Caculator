@@ -8,7 +8,7 @@
 import UIKit
 
 final class ViewController: UIViewController {
-
+    
     
     @IBOutlet weak var displayLabel: UILabel!
     
@@ -17,11 +17,12 @@ final class ViewController: UIViewController {
     private var previousNumber: Double = 0
     private var operation: String = ""
     private var isOperationPerformed: Bool = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
+    
     @IBAction func buttonACTapped(_ sender: Any) {
         currentInput = ""
         result = 0
@@ -56,7 +57,7 @@ final class ViewController: UIViewController {
             performOperation()
             operation = operationText
         }
-
+        
     }
     
     func performOperation() {
@@ -89,5 +90,31 @@ final class ViewController: UIViewController {
         operation = ""
     }
     
+    @IBAction func buttonNegativeTapped(_ sender: Any) {
+        if currentInput.isEmpty {
+            currentInput = "-"
+        } else {
+            if currentInput.first == "-" {
+                currentInput.removeFirst()
+            } else {
+                currentInput.insert("-", at: currentInput.startIndex)
+            }
+        }
+        displayLabel.text = currentInput
+    }
+    
+    @IBAction func buttonPercentTapped(_ sender: Any) {
+        guard let currentNumber = Double(currentInput) else { return }
+        let percentValue = currentNumber * 0.01
+        currentInput = "\(percentValue)"
+        displayLabel.text = currentInput
+    }
+    
+    @IBAction func buttonCommaTapped(_ sender: Any) {
+        if !currentInput.contains(".") {
+            currentInput += "."
+        }
+        displayLabel.text = currentInput
+    }
 }
 

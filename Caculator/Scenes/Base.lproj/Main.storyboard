@@ -48,6 +48,9 @@
                                                         <buttonConfiguration key="configuration" style="filled" title="+/_">
                                                             <color key="baseBackgroundColor" systemColor="systemGrayColor"/>
                                                         </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="buttonNegativeTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9RX-EV-lrq"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hb6-gd-tBf">
                                                         <rect key="frame" x="190.66666666666666" y="0.0" width="86.999999999999972" height="105.33333333333333"/>
@@ -55,6 +58,9 @@
                                                         <buttonConfiguration key="configuration" style="filled" title="%">
                                                             <color key="baseBackgroundColor" systemColor="systemGrayColor"/>
                                                         </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="buttonPercentTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IH6-w5-4mt"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b07-Kv-ccs">
                                                         <rect key="frame" x="285.66666666666669" y="0.0" width="87.333333333333314" height="105.33333333333333"/>
@@ -222,6 +228,9 @@
                                                         <buttonConfiguration key="configuration" style="filled" title=",">
                                                             <color key="baseBackgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="buttonCommaTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2Cy-yU-6eX"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="chh-i8-58T">
                                                         <rect key="frame" x="254" y="0.0" width="119" height="105.33333333333333"/>
